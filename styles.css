@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e3c5f; /* Deep green background color */
+    color: #e0ebf7; /* Light text color for contrast */
+    line-height: 1.8;
+}
+
+header {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto; 
+    background: rgba(35, 40, 35, 0.9); /* Dark background for main content */
+    border-radius: 20px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.features ul {
+    list-style-type: none;
+}
+
+.features li {
+    background: rgba(62, 62, 62, 0.7);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.5em;
+}
+
+.features li:hover {
+    background: #3ec32b;
+    transform: translateY(-5px);
+}
+
+.components {
+    margin-top: 40px;
+}
+
+.component-box {
+    background: rgba(40, 50, 40, 0.8); /* Darker background for component sections */
+    margin: 20px 0; /* Space between component boxes */
+    padding: 20px; /* Inner padding for component boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    transition: transform 0.3s;
+}
+
+.component-box h3 {
+    color: #4CAF50; /* Green color for component titles */
+}
+
+.component-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(10, 10, 10, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #4CAF50;
+}
+
+footer .credits {
+    margin-bottom: 10px;
+    font-size: 1em; /* Smaller font for credit names */
+    color: #b0c4de; /* Lighter color for credits */
+}
+
+footer .credits p {
+    margin: 5px 0; /* Slight space between names */
+}

@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #ff5722; /* Orange accent */
+    animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+    color: #ff5722; /* Orange for title */
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(50, 50, 50, 0.9); /* Dark semi-transparent background */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    border-bottom: 2px solid #ff5722; /* Orange for section headers */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features li {
+    background: rgba(70, 70, 70, 0.7);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.features li:hover {
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.how-it-works p {
+    background: rgba(30, 30, 30, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #ff5722; /* Orange border for footer */
+}
+
+footer p {
+    color: #ff5722; /* Orange for footer text */
+    font-size: 1.5em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

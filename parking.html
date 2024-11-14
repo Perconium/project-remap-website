@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Garage System</title>
+    <link rel="stylesheet" href="parking.css">
+</head>
+
+<body>
+    <style>
+        /* Basic Reset */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color:rgb(9, 71, 90);
+        }
+    
+        .container {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+        }
+    
+        /* Background moving effect */
+        .background {
+          position: absolute;
+          width: 300%;
+          height: 100%;
+          background: linear-gradient(to right, #32CD32 50%, #228B22 50%);
+          animation: moveBackground 5s linear infinite;
+        }
+    
+        /* Car Styling */
+        .car {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          width: 100px;
+          height: 60px;
+          background-color: #ff4500; /* Car body color */
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          transform: translateX(-50%);
+        }
+    
+        /* Animating the car (it appears stationary) */
+        @keyframes moveBackground {
+          0% {
+            left: 0;
+          }
+          100% {
+            left: -100%;
+          }
+        }
+      </style>
+    <header>
+        <h1>Smart Parking System</h1>
+        <p>Optimize your parking with intelligent slot detection.</p>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>What is Smart Garage?</h2>
+            <p>The Smart Garage system monitors parking spaces using sensors to detect parked cars and enhance user experience.</p>
+        </section>
+
+        <section class="features">
+            <h2>Benefits of Smart Garage</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Real-Time Monitoring</td>
+                        <td>View the number of available parking slots at any moment.</td>
+                    </tr>
+                    <tr>
+                        <td>Improved Traffic Flow</td>
+                        <td>Reduce congestion by guiding drivers to available spots quickly.</td>
+                    </tr>
+                    <tr>
+                        <td>Energy Efficient</td>
+                        <td>Decrease the time spent searching for parking, reducing fuel consumption.</td>
+                    </tr>
+                    <tr>
+                        <td>User-Friendly Interface</td>
+                        <td>Simple screens display instant data for easy navigation.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Smart Parking. Smart Choices. Bright Future.</p>
+    </footer>
+</body>
+</html>

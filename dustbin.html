@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Dustbin Technology</title>
+    <link rel="stylesheet" href="dustbin.css">
+</head>
+
+<body>
+    <style>
+        /* Basic Reset */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #113a68; /* Sky blue background */
+        }
+    
+        .container {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+        }
+    
+        /* Background moving effect */
+        .background {
+          position: absolute;
+          width: 300%;
+          height: 100%;
+          background: linear-gradient(to right, #32CD32 50%, #228B22 50%);
+          animation: moveBackground 5s linear infinite;
+        }
+    
+        /* Car Styling */
+        .car {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          width: 100px;
+          height: 60px;
+          background-color: #ff4500; /* Car body color */
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          transform: translateX(-50%);
+        }
+    
+        /* Animating the car (it appears stationary) */
+        @keyframes moveBackground {
+          0% {
+            left: 0;
+          }
+          100% {
+            left: -100%;
+          }
+        }
+      </style>
+    <header>
+        <h1>Smart Dustbin</h1>
+        <p>Waste management redefined with intelligent solutions.</p>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>What is Smart Dustbin?</h2>
+            <p>A smart dustbin integrates advanced technology to improve waste management. It uses sensors to detect the level of waste and can alert you when it needs to be emptied.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Automatic lid opening and closing</li>
+                <li>Hygine enhanced as no touch to the dustbin surface is done</li>
+                <li>Enhanced for handicaps who cannot open the dustbin on their own </li>
+               
+            </ul>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <p>The smart dustbin is equipped with ultrasonic sensors that senses your hand in front of them and automatically opens the lid for you to provide hygine.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed for the future. Empowered by technology.</p>
+    </footer>
+</body>
+
+</html>

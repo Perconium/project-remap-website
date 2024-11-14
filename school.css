@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a192f; /* Dark blue background */
+    color: #b0c4de; /* Light color for text */
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid #1fa2ff;
+    animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+    color: #1fa2ff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(35, 40, 50, 0.9); /* Semi-transparent dark background */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    border-bottom: 2px solid #1fa2ff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-in;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+table, th, td {
+    border: 1px solid #1fa2ff; /* Blue border */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0a3e7e; /* Dark blue for header */
+    color: #ffffff;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #1fa2ff; /* Highlight background color */
+}
+
+.benefits ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.benefits li {
+    background: rgba(30, 40, 50, 0.75);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    animation: fadeIn 1s ease-in;
+}
+
+.benefits li:hover {
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(5, 5, 5, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #1fa2ff;
+}
+
+footer p {
+    color: #1fa2ff; /* Blue color for footer text */
+    font-size: 1.5em;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

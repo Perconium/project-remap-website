@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Heaven - Smart City Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Inline Styles for Carousel */
+      .carousel {
+          overflow: hidden;
+          position: relative;
+          border-radius: 10px; /* Rounded corners for the carousel */
+          margin-top: 20px; /* Space above the carousel */
+      }
+
+      .carousel-images {
+          display: flex;
+          transition: transform 0.5s ease;
+          will-change: transform; /* Optimize for smoother transitions */
+      }
+
+      .carousel-image {
+          min-width: 100%; /* Each image takes up one full width */
+          border-radius: 10px; /* Rounded corners for images */
+      }
+
+      .carousel-indicator {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+      }
+
+      .indicator-dot {
+          height: 10px;
+          width: 10px;
+          margin: 0 5px;
+          background-color: #4CAF50; /* Green color for dots */
+          border-radius: 50%;
+          display: inline-block;
+          cursor: pointer;
+          opacity: 0.5;
+          transition: opacity 0.3s;
+      }
+
+      .indicator-dot.active {
+          opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tech Heaven</h1>
+        <p>Your vision of a smart city.</p>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>About Tech Heaven</h2>
+            <p>Tech Heaven for a smart city could be envisioned as a highly advanced urban area where technology and innovation are at the forefront of every aspect of life. In essence, Tech Heaven would be a smart city that not only leverages technology for efficiency and sustainability but also focuses on innovation, quality of life, and community engagement to create a thriving urban environment.</p>
+        </section><br>
+       
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Smart Attendance System</li>
+                <li>Radar</li>
+                <li>Home Automation</li>
+                <li>Smart Car</li>
+                <li>Smart Dustbin</li>
+                <li>Sanitizer Dispenser</li>
+                <li>Smart Garage</li>
+            </ul>
+        </section>
+
+        <section class="arduino">
+            <h2>Arduino Overview</h2>
+            <p>Arduino is an open-source electronics platform based on easy-to-use hardware and 
+                software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, 
+                or a Twitter message - and turn it into an output - activating a motor, turning on an LED, 
+                publishing something online. You can tell your board what to do by sending a set of 
+                instructions to the microcontroller on the board. To do so you use the Arduino 
+                programming language (based on Wiring), and the Arduino Software (IDE), based 
+                on Processing. Arduino is an Italian open-source hardware and software company, project, 
+                and user community that designs and manufactures single-board and microcontroller kits 
+                for building digital devices. Arduino board designs use a variety of microprocessors and 
+                controllers. The boards are equipped with sets of digital and analog input/output (I/O) 
+                pins that may be interfaced to various expansion boards ('shields') or breadboards (for 
+                prototyping) and other circuits. The Arduino project was started at the Interaction Design 
+                Institute Ivrea (IDII) in Ivrea, Italy. At that time, the students used a BASIC 
+                Stamp microcontroller. Casey Reas is known for co-creating, with Ben Fry, 
+                the Processing development platform. Key Features:</p><br>
+            <ul>
+                <li>Open-Source Hardware</li>
+                <li>Wide Range of Boards</li>
+                <li>Easy-to-Use Software (IDE)</li>
+                <li>Affordable</li>
+            </ul>
+            <p>Our Arduino is Arduino Uno.</p>
+
+            <!-- Carousel for Arduino Images -->
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img style="height: 400px; width: 200px;;"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arduino-uno-perspective-transparent.png/1200px-Arduino-uno-perspective-transparent.png" alt="Arduino Image 1" class="carousel-image">
+                    <img style="height: 500px; width: 200px;;" src="https://www.researchgate.net/publication/339904713/figure/fig1/AS:868637980258312@1584110841941/Arduino-Uno-R3-device-configuration.png" alt="Arduino Image 2" class="carousel-image">
+                    <img style="height: 600px; width: 224px;;" src="https://www.freeiconspng.com/uploads/arduino-icon-28.png" alt="Arduino Image 3" class="carousel-image">
+                </div>
+                <div class="carousel-indicator"></div>
+            </div>
+        </section>
+
+        <section class="components">
+            <h2>Parts of our smart city</h2>
+            
+            <div class="component-box">
+            
+            
+              <a style="color: rgb(255, 255, 255); font-size: 30px;" href="school.html" target="_blank">School</a>
+            </div>
+            <div class="component-box">
+            
+            
+                <a style="color: rgb(255, 255, 255); font-size: 30px;;" href="parking.html" target="_blank">Smart Parking System</a>
+              </div>
+
+            
+            <div class="component-box">
+            
+            
+                <a style="color: rgb(255, 255, 255); font-size: 30px;;" href="radar.html" target="_blank">Radar</a>
+              </div>
+                 
+            <div class="component-box">
+            
+            
+                <a style="color: rgb(255, 255, 255); font-size: 30px;;" href="home.html" target="_blank">Home Automation</a>
+              </div>
+                 
+            <div class="component-box">
+            
+            
+                <a style="color: rgb(255, 255, 255); font-size: 30px;;" href="car.html"target="_blank">Smart Car</a>
+              </div>
+                 
+            <div class="component-box">
+            
+            
+                <a style="color: rgb(255, 255, 255); font-size: 30px;;" href="dustbin.html" target="_blank">Smart Dustbin</a>
+              </div>
+                 
+         
+        </section>
+    </main>
+
+    <footer>
+        <div class="credits">
+            <p>Website Created by: Harsh Singh 9th B</p>
+            <p>Projects Credits: Ayush Singh 9th A, Adarsh Shukla 9th A, Parth Goswami 9th A</p>
+        </div>
+        <p> Designed for the future. Empowered by technology</p>
+    </footer>
+
+    <script>
+      // JavaScript for the carousel
+      const images = document.querySelectorAll('.carousel-image');
+      const carouselImages = document.querySelector('.carousel-images');
+      const indicatorContainer = document.querySelector('.carousel-indicator');
+
+      let index = 0;
+
+      function createIndicators() {
+          images.forEach((_, i) => {
+              const dot = document.createElement('div');
+              dot.classList.add('indicator-dot');
+              if (i === index) {
+                  dot.classList.add('active');
+              }
+              indicatorContainer.appendChild(dot);
+
+              dot.addEventListener('click', () => {
+                  clearInterval(slideInterval); // Stop auto-slide on dot click
+                  index = i; // Set current index
+                  updateCarousel(); // Update to show selected index
+              });
+          });
+      }
+
+      function updateCarousel() {
+          carouselImages.style.transform = `translateX(-${index * 100}%)`;
+
+          // Update active dot
+          const dots = document.querySelectorAll('.indicator-dot');
+          dots.forEach(dot => dot.classList.remove('active'));
+          dots[index].classList.add('active');
+      }
+
+      function slideCarousel() {
+          index = (index + 1) % images.length; // Loop back to the start
+          updateCarousel();
+      }
+
+      // Create indicators and start sliding
+      createIndicators();
+      const slideInterval = setInterval(slideCarousel, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
